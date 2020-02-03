@@ -1,0 +1,16 @@
+bitset1.cpp	: Demostration of bitset in c++
+collatzConjecture.cpp	:	Generating the Collatz Conjecture and checking if previous is collatz is present or not
+distinctsubset.cpp	:	Generating the distinct subset
+helloWorld.cpp	:	Simple Hellow world Problem	
+map1.cpp	:	Demostration of Map functionlity in c++
+mergesort.cpp	:	Demostration of mergesort
+prime.cpp	: Prime number implementation	
+quicksort.cpp	: Quick sort implementation
+quicksortfiledata.cpp	: Applying quick sort on generated data
+random.txt	: 	Random number generated file0
+randomGeneration.cpp	:	Randome number generator using C++
+smstyping.cpp	:	SMS typing problem on Kattis
+subsetgenerationRecursion
+subsetgenerationRecursion.cpp	:	Subset generation using recursion	
+tempCodeRunnerFile.cpp
+topologicalsort.cpp	:	Topological sort implementation in GeeksForGeeks
