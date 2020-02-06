@@ -25,7 +25,7 @@ void powerSet(string str,int index= -1,string curr=""){
 }
 
 int main(){
-    string str = "abc";
+    string str = "abcd";
     powerSet(str);
     return 0;
 }
