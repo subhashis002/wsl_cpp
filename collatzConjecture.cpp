@@ -31,6 +31,13 @@ int collatzConjecture(int num1,int num2){
             break;
         }
     }
+	
+    if(orig_num1 == 1){
+            mmap_num1.insert({num1,1});
+
+    }else if(num1 == 1){
+            mmap_num1.insert({num1,step1});
+    }
     itr1 = mmap_num1.find(num2);
     if(itr1 != mmap_num1.end()){
         cout<<orig_num1<<" needs "<<itr1->second<<" steps, "<<orig_num2<<" needs "<<step2<<" steps, they meet at "<<num2<<endl;
