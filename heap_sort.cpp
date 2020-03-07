@@ -46,7 +46,7 @@ int main(){
 	//int arr[]={0,7,5,4,3,2,19,201,22};
 	int arr[NU]={0};
 	ifstream in("random.txt");
-	ofstream out("random.out");
+	ofstream out("random_out.txt");
 	if(!in.is_open()){
 		cout<<"Can not open the random.txt file"<<endl;
 		exit(1);
