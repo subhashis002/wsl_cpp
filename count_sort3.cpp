@@ -26,7 +26,13 @@ void countSort(vector<vector<string>> arr) {
 int main()
 {
     string n_temp;
-    getline(cin, n_temp);
+    //getline(cin, n_temp);
+    ifstream inputfile("count_sort_test_cases.txt");
+    if(!inputfile.is_open()){
+	cout<<"Can not open input file .. exited"<<endl;
+	exit(1);
+	}
+	inputfile>>n_temp;
 
     int n = stoi(ltrim(rtrim(n_temp)));
 
@@ -36,7 +42,8 @@ int main()
         arr[i].resize(2);
 
         string arr_row_temp_temp;
-        getline(cin, arr_row_temp_temp);
+        //getline(cin, arr_row_temp_temp);
+	getline(inputfile,arr_row_temp_temp);
 
         vector<string> arr_row_temp = split(rtrim(arr_row_temp_temp));
 
