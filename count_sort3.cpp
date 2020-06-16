@@ -9,17 +9,20 @@ vector<string> split(const string &);
 // Complete the countSort function below.
 void countSort(vector<vector<string>> arr) {
     vector<string> result[100];
-    /*
+
     for(int i=0;i<arr.size()/2;i++){
         arr[i][1]="-";
     }
-    */
     for(int i=0;i<arr.size();i++){
         cout<<arr[i][0]<<" "<<arr[i][1]<<endl;
     }
 
-    for(int i=0; i<100;i++)
-        result[stoi(arr[i][0])].push_back(arr[i][1]);
+    for(int i=0; i<100;i++){
+    	string temp;
+	//temp.copy(arr[i][1]);
+	strcpy(temp,arr[i][1]);
+	result[stoi(arr[i][0])].push_back(temp);
+    }
     
 }
 
